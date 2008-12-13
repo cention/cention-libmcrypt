@@ -1,4 +1,4 @@
-# Makefile.in generated automatically by automake 1.4-p5 from Makefile.am
+# Makefile.in generated automatically by automake 1.4-p6 from Makefile.am
 
 # Copyright (C) 1994, 1995-8, 1999, 2001 Free Software Foundation, Inc.
 # This Makefile.in is free software; the Free Software Foundation
@@ -64,12 +64,15 @@ CC = @CC@
 DLLTOOL = @DLLTOOL@
 ECHO = @ECHO@
 EXEEXT = @EXEEXT@
+HAVE_LIB = @HAVE_LIB@
 INCLTDL = @INCLTDL@
+LIB = @LIB@
 LIBADD_DL = @LIBADD_DL@
 LIBLTDL = @LIBLTDL@
 LIBTOOL = @LIBTOOL@
 LIBTOOL_DEPS = @LIBTOOL_DEPS@
 LN_S = @LN_S@
+LTLIB = @LTLIB@
 MAINT = @MAINT@
 MAKEINFO = @MAKEINFO@
 OBJDUMP = @OBJDUMP@
@@ -81,11 +84,11 @@ VERSION = @VERSION@
 
 AUTOMAKE_OPTIONS = no-dependencies foreign
 
-@INSTALL_LTDL_TRUE@include_HEADERS = @INSTALL_LTDL_TRUE@ltdl.h
-@INSTALL_LTDL_TRUE@lib_LTLIBRARIES = @INSTALL_LTDL_TRUE@libltdl.la
-@INSTALL_LTDL_FALSE@noinst_HEADERS = @INSTALL_LTDL_FALSE@ltdl.h
+@INSTALL_LTDL_TRUE@include_HEADERS = ltdl.h
+@INSTALL_LTDL_TRUE@lib_LTLIBRARIES = libltdl.la
+@INSTALL_LTDL_FALSE@noinst_HEADERS = ltdl.h
 
-@CONVENIENCE_LTDL_TRUE@noinst_LTLIBRARIES = @CONVENIENCE_LTDL_TRUE@libltdlc.la
+@CONVENIENCE_LTDL_TRUE@noinst_LTLIBRARIES = libltdlc.la
 
 CLEANFILES = libltdl.la libltdlc.la
 
@@ -124,7 +127,7 @@ acinclude.m4 aclocal.m4 config-h.in configure configure.in
 
 DISTFILES = $(DIST_COMMON) $(SOURCES) $(HEADERS) $(TEXINFOS) $(EXTRA_DIST)
 
-TAR = gtar
+TAR = tar
 GZIP_ENV = --best
 SOURCES = $(libltdl_la_SOURCES) $(libltdlc_la_SOURCES)
 OBJECTS = $(libltdl_la_OBJECTS) $(libltdlc_la_OBJECTS)
@@ -292,7 +295,7 @@ TAGS:  $(HEADERS) $(SOURCES) config-h.in $(TAGS_DEPENDENCIES) $(LISP)
 	  awk '    { files[$$0] = 1; } \
 	       END { for (i in files) print i; }'`; \
 	test -z "$(ETAGS_ARGS)config-h.in$$unique$(LISP)$$tags" \
-	  || (cd $(srcdir) && etags $(ETAGS_ARGS) $$tags config-h.in $$unique $(LISP) -o $$here/TAGS)
+	  || (cd $(srcdir) && etags -o $$here/TAGS $(ETAGS_ARGS) $$tags config-h.in $$unique $(LISP))
 
 mostlyclean-tags:
 

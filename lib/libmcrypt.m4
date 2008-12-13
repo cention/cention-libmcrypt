@@ -14,7 +14,7 @@ dnl $id$
 dnl AM_PATH_LIBMCRYPT([MINIMUM-VERSION, [ACTION-IF-FOUND [, ACTION-IF-NOT-FOUND ]]])
 dnl Test for libmcrypt, and define LIBMCRYPT_CFLAGS and LIBMCRYPT_LIBS
 dnl
-AC_DEFUN(AM_PATH_LIBMCRYPT,
+AC_DEFUN([AM_PATH_LIBMCRYPT],
 [dnl
 dnl Get the cflags and libraries from the libmcrypt-config script
 dnl
