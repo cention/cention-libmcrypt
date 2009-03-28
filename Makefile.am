@@ -2,7 +2,7 @@
 
 INCLUDES = $(INCLTDL)
 EXTRA_DIST = KNOWN-BUGS THANKS NEWS libmcrypt.spec.in libmcrypt.spec COPYING.LIB
-DIST_SUBDIRS = libltdl modules include lib src doc
+DIST_SUBDIRS = $(LIBLTDL_DIR) modules include lib src doc
 SUBDIRS = $(LIBLTDL_DIR) modules include lib src doc
 
 ChangeLog:
