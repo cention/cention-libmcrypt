@@ -2,8 +2,11 @@ Source: libmcrypt
 Section: libs
 Priority: optional
 Maintainer: RISKO Gergely <risko@debian.org>
-Build-Depends: libltdl3-dev, debhelper
-Standards-Version: 3.6.1.1
+Build-Depends: libltdl3-dev, debhelper (>= 7)
+Vcs-Browser: http://git.debian.org/?p=collab-maint/libmcrypt.git;a=summary
+Vcs-Git: git://git.debian.org/collab-maint/libmcrypt.git
+Homepage: http://mcrypt.sourceforge.net/
+Standards-Version: 3.8.1
 
 Package: libmcrypt4
 Section: libs
