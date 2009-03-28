@@ -61,7 +61,9 @@
 
 
 #ifdef HAVE_READDIR_R
+#ifndef _POSIX_C_SOURCE
 # define _POSIX_C_SOURCE 199506L
+#endif
 #endif
 
 #ifdef HAVE_DIRENT_H

@@ -21,7 +21,7 @@
 
 #define MCRYPT_API_VERSION 20021217
 
-#define LIBMCRYPT_VERSION "2.5.7"
+#define LIBMCRYPT_VERSION "2.5.8"
 
 #ifdef __cplusplus
 extern "C" {

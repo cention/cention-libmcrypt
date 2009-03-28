@@ -164,7 +164,7 @@ main ()
         printf("*** of LIBMCRYPT, but you can also set the LIBMCRYPT_CONFIG environment to point to the\n");
         printf("*** correct copy of libmcrypt-config. (In this case, you will have to\n");
         printf("*** modify your LD_LIBRARY_PATH enviroment variable, or edit /etc/ld.so.conf\n");
-        printf("*** so that the correct libraries are found at run-time))\n");
+        printf("*** so that the correct libraries are found at run-time)\n");
       }
     }
   return 1;

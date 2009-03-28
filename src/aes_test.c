@@ -16,7 +16,7 @@
  *    Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include "../lib/mcrypt.h"
+#include "../include/mutils/mcrypt.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
