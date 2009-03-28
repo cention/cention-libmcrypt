@@ -11,7 +11,7 @@ Standards-Version: 3.8.1
 Package: libmcrypt4
 Section: libs
 Architecture: any
-Depends: ${shlibs:Depends}
+Depends: ${shlibs:Depends}, ${misc:Depends}
 Suggests: libmcrypt-dev, mcrypt
 Description: De-/Encryption Library
  libmcrypt is the library which implements all the algorithms and
@@ -30,7 +30,7 @@ Description: De-/Encryption Library
 Package: libmcrypt-dev
 Section: libdevel
 Architecture: any
-Depends: libmcrypt4 (= ${Source-Version}), libltdl3-dev
+Depends: libmcrypt4 (= ${binary:Version}), ${misc:Depends}
 Replaces: libmcrypt4 (<< 2.5.7-2)
 Description: De-/Encryption Library development files
  libmcrypt is the library which implements all the algorithms and
