@@ -3,6 +3,13 @@
 %:
 	dh "$@"
 
+override_dh_installman:
+	dh_installman
+	mv debian/libmcrypt-dev/usr/share/man/man3/mcrypt.3 debian/libmcrypt-dev/usr/share/man/man3/libmcrypt.3
+
+override_dh_auto_configure:
+	dh_auto_configure -- --enable-static
+
 # # Sample debian/rules that uses debhelper.
 # # This file is public domain software, originally written by Joey Hess. 
 
@@ -88,3 +95,4 @@
 
 # binary: binary-indep binary-arch
 # .PHONY: build clean binary-indep binary-arch binary install
+
