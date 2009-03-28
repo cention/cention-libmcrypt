@@ -1,9 +1,24 @@
 libmcrypt (2.5.8-1) unstable; urgency=low
 
-  * New upstream version (closes: #427437)
+  * Imported Upstream version 2.5.8 (closes: #427437)
     - fixes lib/libmcrypt.m4 quoting bug (closes: #305288)
+  * debian/rules: simplified packaging by using dh
+  * new control fields (homepage, vcs-*), watch file, debian/compat = 7
+  * include the mcrypt.3 manpage as libmcrypt.3 in the dev package
+  * enable static library in the dev package
+  * put .so and .la into the dev instead of the lib package
+    (closes: #501680)
+  * debian/copyright cleanups
+  * ${Source-Versions} -> ${binary:Version} in debian/control
+  * Depends: ${misc:Depends} in debian/control
+  * lintian source package overrides: debian/source.lintian-overrides
+  * config.sub, config.guess patch to use the versions from
+    /usr/share/misc
+  * support 40 and 80 bits long keys in cast5
+    patch sent to upstream
+    (closes: #299509)
 
- -- RISKO Gergely <risko@debian.org>  Sat, 28 Mar 2009 19:06:15 +0200
+ -- RISKO Gergely <risko@debian.org>  Sat, 28 Mar 2009 22:25:40 +0200
 
 libmcrypt (2.5.7-5.1) unstable; urgency=low
 
