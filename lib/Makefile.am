@@ -1,6 +1,5 @@
 DEFS = @DEFS@ -DLIBDIR=\"$(libdir)/@PACKAGE@/\" 
 INCLUDES = -I. -I.. $(INCLTDL) -I../modules/algorithms -I../modules/modes
-include_HEADERS = mcrypt.h 
 EXTRA_DIST = libdefs.h bzero.h xmemory.h mcrypt_modules.h mcrypt_internal.h \
  libmcrypt.sym win32_comp.h mcrypt.h.in libmcrypt-config.in libmcrypt.m4
 lib_LTLIBRARIES = libmcrypt.la 

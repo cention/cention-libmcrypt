@@ -1,6 +1,6 @@
 Summary: libmcrypt is a data encryption library.
 Name: libmcrypt
-Version: 2.5.7
+Version: 2.5.8
 Release: 1
 Copyright: LGPL
 Source: ftp://mcrypt.hellug.gr/pub/crypto/mcrypt/%{name}-%{version}.tar.gz
