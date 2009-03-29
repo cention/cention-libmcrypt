@@ -1,3 +1,13 @@
+libmcrypt (2.5.8-3) unstable; urgency=low
+
+  * Applied the following patches from sourceforge.net's bugtracker:
+    - libmcrypt-2.5.8-prototypes.diff
+      http://sourceforge.net/tracker/?func=detail&aid=1872799&group_id=87941&atid=584895
+    - libmcrypt-rotate-mask.patch (this should fix build on 64bit archs)
+      http://sourceforge.net/tracker/?func=detail&aid=2424445&group_id=87941&atid=584895
+
+ -- RISKO Gergely <risko@debian.org>  Mon, 30 Mar 2009 01:59:02 +0300
+
 libmcrypt (2.5.8-2) unstable; urgency=low
 
   * debian/rules: fix the clean target, which wasn't runnable after
