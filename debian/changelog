@@ -1,3 +1,10 @@
+libmcrypt (2.5.8-2) unstable; urgency=low
+
+  * debian/rules: fix the clean target, which wasn't runnable after
+    extracting the source package
+
+ -- RISKO Gergely <risko@debian.org>  Sun, 29 Mar 2009 16:40:47 +0300
+
 libmcrypt (2.5.8-1) unstable; urgency=low
 
   * Imported Upstream version 2.5.8 (closes: #427437)

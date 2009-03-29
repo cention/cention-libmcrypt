@@ -3,6 +3,11 @@
 %:
 	dh "$@"
 
+# Upstream bug: halfly ./configure finished directory tar.gz'd up as orig.tar.gz
+override_dh_auto_clean:
+	dh_auto_configure -- --enable-static
+	dh_auto_clean
+
 override_dh_installman:
 	dh_installman
 	mv debian/libmcrypt-dev/usr/share/man/man3/mcrypt.3 debian/libmcrypt-dev/usr/share/man/man3/libmcrypt.3
