@@ -1,3 +1,12 @@
+libmcrypt (2.5.8-3.1) unstable; urgency=high
+
+  * Non-maintainer upload.
+  * High-urgency upload for RC bugfix.
+  * Add missing Replaces: from libmcrypt-dev to libmcrypt4 (<< 2.5.8-1).
+    Closes: #523310.
+
+ -- Steve Langasek <vorlon@debian.org>  Fri, 14 Aug 2009 14:50:23 -0700
+
 libmcrypt (2.5.8-3) unstable; urgency=low
 
   * Applied the following patches from sourceforge.net's bugtracker:

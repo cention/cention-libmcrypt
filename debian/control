@@ -31,7 +31,7 @@ Package: libmcrypt-dev
 Section: libdevel
 Architecture: any
 Depends: libmcrypt4 (= ${binary:Version}), ${misc:Depends}
-Replaces: libmcrypt4 (<< 2.5.7-2)
+Replaces: libmcrypt4 (<< 2.5.8-1)
 Description: De-/Encryption Library development files
  libmcrypt is the library which implements all the algorithms and
  modes found in mcrypt.
